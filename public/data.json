@@ -1,0 +1,31 @@
+{
+  "appits": 
+  [
+                {
+                "id": 1,
+                "icon" : "1.png" ,
+                "title": "Planning and clarity of strategies",
+                "des": " We have more than 10 years of experience in building mobile and web applications so that they integrate with the most common software systems such as ERP, CRM, and our software easily deals with cloud computing."
+                } ,
+                {
+                "id": 2,
+                "icon" : "2.png" ,
+                "title": "Our software has strong operational capability",
+                "des": " We have more than 10 years of experience in building mobile and web applications so that they integrate with the most common software systems such as ERP, CRM, and our software easily deals with cloud computing."
+                } ,
+                {
+                "id": 3,
+                "icon" : "3.png" ,
+                "title": "Cumulative experience enables fast implementation and lower cost",
+                "des": " We have more than 10 years of experience in building mobile and web applications so that they integrate with the most common software systems such as ERP, CRM, and our software easily deals with cloud computing."
+                } ,
+                {
+                "id": 4,
+                "icon" : "4.png" ,
+                "title": "Long experience in industries",
+                "des": " We have more than 10 years of experience in building mobile and web applications so that they integrate with the most common software systems such as ERP, CRM, and our software easily deals with cloud computing."
+                }
+            
+            
+            ]
+}

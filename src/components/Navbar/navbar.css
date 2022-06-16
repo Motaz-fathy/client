@@ -1,0 +1,128 @@
+
+.content  {
+width: 100%;
+height: 75px;
+background-color:#ffffff06;
+position: fixed;
+z-index: 77777;
+}
+.content2  {
+    width: 100%;
+    height: 80px;
+    background-color:black;
+    position: fixed;
+z-index: 77777;
+
+    }
+.content  .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.content2  .container {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.logo .brand {
+    width: 120px;
+    height: 30px;
+    background-image: url('../../../public/assetes/home/logo-white.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.links {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.links i {
+    display: none;
+}
+ .links ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+.links ul li {
+    padding: 0 10px;
+    display: block;
+}
+.links ul li a{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+}
+.links ul li a:hover {
+    color: #dadada;
+}
+
+@media only screen and (max-width: 993px) {
+    /* For mobile phones: */
+    .logo {
+        width: 20%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .links i {
+        width: 10%;
+        display: block;
+        color: white;
+        position: absolute;
+        right: 50px;
+        cursor: pointer;
+    }
+      .links .show{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: #ffffff06;
+    }
+    .links .hide{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        background-color: #ffffff06;
+    }
+    .links ul li {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 10px 0 ;
+       cursor: pointer;
+
+    }
+    .links ul li:hover a{
+        color: gray;
+    }
+    .logo {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+  }

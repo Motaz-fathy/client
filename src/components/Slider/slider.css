@@ -1,0 +1,274 @@
+
+.All_shapes {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.All_shapes .circl_shap {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.All_shapes .circl_shap .sh1 {
+   width: 200px;
+   height: 196px;
+   background: linear-gradient(145.09deg, rgba(100, 100, 100, 0.88) 30.16%, rgba(100, 100, 100, 0.88) 50.04%, #727272 91.29%);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   backdrop-filter: blur(18px);
+   border-radius: 400px 40px 20px;
+}
+.All_shapes .circl_shap .sh2 {
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 130px;
+    height: 125px;
+    background: linear-gradient(137.58deg, #9B9999 11.38%, rgba(130, 130, 130, 0.79) 50.04%, rgba(146, 146, 146, 0.36) 91.54%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(18px);
+    border-radius: 400px 40px 20px;
+    transform: rotate(-90deg);
+ }
+  
+.All_shapes .poly_shap {
+    position: relative;
+    width: 55%;
+    height: 100%;
+}
+
+ #poly1 {
+    z-index: 1;
+    position: absolute;
+    top: 0em;
+    left: 10px;
+    cursor: pointer;
+    width: 50%;
+    height: 350px;
+    border-radius:  20px 20px 50%  10px ;
+    background: linear-gradient(149.47deg, rgba(170, 146, 19, 0.9) 5.08%, rgba(175, 107, 25, 0.9) 50.65%, rgba(175, 76, 27, 0.9) 75.66%);
+    box-shadow: 9px 10px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    text-align: left;
+    
+}
+
+#poly2 {
+    position: absolute;
+    top: 4em;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer;
+    width: 50%;
+    height: 350px;
+    border-radius:  20px 20px 50%  10px ;
+    background: linear-gradient(149.47deg, rgba(184, 67, 118, 0.8) 5.08%, rgba(162, 51, 125, 0.8) 50.65%, rgba(137, 31, 127, 0.8) 75.66%);
+    box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: left;
+
+}
+
+#poly3 {
+    position: absolute;
+    top: 8em;
+    z-index: 3;
+    left: 30px;
+    cursor: pointer;
+    width: 50%;
+    height: 350px;
+    background: linear-gradient(149.47deg, rgba(20, 170, 105, 0.8) 5.08%, rgba(25, 145, 128, 0.8) 50.65%, rgba(33, 127, 149, 0.8) 75.66%);
+    box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 35px 35px 200px 35px;
+    padding: 10px;
+    text-align: left;
+
+}
+#poly4 {
+    position: absolute;
+    top: 12em;
+    z-index: 4;
+    left: 30px;
+    cursor: pointer;
+    width: 50%;
+    height: 350px;
+    border-radius:  20px 20px 50%  10px ;
+    background: linear-gradient(149.47deg, rgba(39, 102, 223, 0.8) 5.08%, rgba(68, 66, 179, 0.8) 50.65%, rgba(95, 39, 179, 0.8) 75.66%);
+    box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 35px 35px 200px 35px;
+    padding: 10px;
+    text-align: left;
+    transition: all ease-in-out 0.3s;
+}
+
+
+#p4  {
+    display: block;
+    padding-top: 20px;  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transition: all ease-in 0.2s;
+
+}
+#p2 , #p3 , #p1 {
+    display: block;
+    padding-top: 20px;  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}  
+
+
+ #head1 ,
+ #head2 ,
+ #head3 ,
+ #head4 
+ {
+padding-top: 10px; 
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 23px;
+color: #FFFFFF;
+text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+hr
+{
+ color: white;
+ margin-bottom: 7px;   
+
+}
+
+#poly4:hover #p4 {
+opacity: 1;
+}
+#poly3:hover + #poly4{
+    animation: PolyAnimation 0.4s ease-in-out forwards;
+    transform: translate(0px,20px);
+} 
+#poly2:hover ~ #poly4{
+    animation: PolyAnimation 0.4s ease-in-out forwards;
+}
+#poly2:hover + #poly3{
+    animation: PolyAnimation 0.4s ease-in-out forwards;
+}
+#poly1:hover ~ #poly4{
+    animation: PolyAnimation 0.4s ease-in-out both .1s;
+}
+#poly1:hover ~ #poly3{
+    animation: PolyAnimation 0.4s ease-in-out both .2s;
+}
+#poly1:hover + #poly2{
+    animation: PolyAnimation 0.4s ease-in-out both .3s;
+}
+#poly2:hover  #p2{
+    display: block;
+}  
+#poly1:hover  #p1{
+    display: block;
+} 
+#poly3:hover  #p3{
+    display: block;
+}
+
+@keyframes PolyAnimation {
+    from {transform: translate(0px,0px);}
+    to {transform: translate(0px,230px);}
+}
+@media only screen and (max-width: 993px) {
+    .All_shapes {
+        width: 400px;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .All_shapes .circl_shap .sh1 {
+        width: 150px;
+        height: 186px;
+        background: linear-gradient(145.09deg, rgba(100, 100, 100, 0.88) 30.16%, rgba(100, 100, 100, 0.88) 50.04%, #727272 91.29%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(18px);
+        border-radius: 400px 40px 20px;
+     }
+     .All_shapes .circl_shap {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .All_shapes .circl_shap .sh2 {
+        margin-left: 50px;
+        margin-top: 15px;
+        width: 100px;
+        height: 88px;
+        background: linear-gradient(137.58deg, #9B9999 11.38%, rgba(130, 130, 130, 0.79) 50.04%, rgba(146, 146, 146, 0.36) 91.54%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(18px);
+        border-radius: 400px 40px 20px;
+        transform: rotate(-90deg);
+     }
+
+     #poly1  {
+        z-index: 1;
+        position: absolute;
+        top: 0px;
+        cursor: pointer;
+        width: 200px;
+        height: 350px;
+        background: linear-gradient(149.47deg, rgba(170, 146, 19, 0.9) 5.08%, rgba(175, 107, 25, 0.9) 50.65%, rgba(175, 76, 27, 0.9) 75.66%);
+        box-shadow: 9px 10px 40px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(10px);
+        text-align: left;
+    }
+    #poly2 {
+        z-index: 2;
+        position: absolute;
+        top: 70px;
+        cursor: pointer;
+        width: 200px;
+        height: 350px;
+        border-radius:  20px 20px 50%  10px ;
+        background: linear-gradient(149.47deg, rgba(184, 67, 118, 0.8) 5.08%, rgba(162, 51, 125, 0.8) 50.65%, rgba(137, 31, 127, 0.8) 75.66%);
+        box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+    #poly3 {
+        z-index: 3;
+        position: absolute;
+        top: 140px;
+        cursor: pointer;
+        width: 200px;
+        height: 350px;
+        background: linear-gradient(149.47deg, rgba(20, 170, 105, 0.8) 5.08%, rgba(25, 145, 128, 0.8) 50.65%, rgba(33, 127, 149, 0.8) 75.66%);
+        box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+        border-radius: 35px 35px 200px 35px;
+        text-align: left;
+    }
+    #poly4 {
+        top: 220px;
+        z-index: 4;
+        position: absolute;
+        cursor: pointer;
+        width: 200px;
+        height: 350px;
+        border-radius:  20px 20px 50%  10px ;
+        background: linear-gradient(149.47deg, rgba(39, 102, 223, 0.8) 5.08%, rgba(68, 66, 179, 0.8) 50.65%, rgba(95, 39, 179, 0.8) 75.66%);
+        box-shadow: 11px 15px 50px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+}
